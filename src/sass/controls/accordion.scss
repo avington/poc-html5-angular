@@ -1,0 +1,30 @@
+/*Init*/
+.accordeon-checkbox {
+  display: none;
+}
+.accordeon-title-label {
+  cursor: pointer;
+  background: #c4c4c4;
+  display: block;
+}
+
+.accordeon-content {
+  height: 0;
+  overflow:hidden;
+  background-color: gold;
+
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+/*Click functionaliteit*/
+.accordeon:checked + label {
+  background: #e4e4e4;
+}
+
+.accordeon-checkbox:checked ~ .accordeon-content {
+  height: 400px;
+}

@@ -1,0 +1,67 @@
+<form>
+    <div class="row">
+        <div class="large-12 columns">
+            <h3>Update Course Information</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-3 columns">
+            <label for="courseCode">Course Code
+                <input type="text" id="courseCode" name="courseCode" placeholder="Course Code"
+                       ng-model="vm.course.courseCode">
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <label>Course Name
+                <input type="text" placeholder="Course Name" ng-model="vm.course.courseName"/>
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <label>Course Description
+                <textarea placeholder="Course Description" ng-model="vm.course.courseDesc"></textarea>
+            </label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <cmc-states-lookup state="vm.course.locationState" control-name="course-state"></cmc-states-lookup>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-6 columns">
+            <cmc-course-type-radio course-type="vm.course.courseType"
+                                   control-name="course-type"></cmc-course-type-radio>
+        </div>
+        <div class="large-6 columns">
+            <cmc-course-credit-radio course-credit="vm.course.credits"
+                                     control-name="course-credit"></cmc-course-credit-radio>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns survey">
+            <accordion close-others="oneAtATime">
+                <accordion-group heading="Take a survey" is-open="true">
+                    <cmc-course-survey control-name="course-survey"></cmc-course-survey>
+                </accordion-group>
+            </accordion>
+        </div>
+    </div>
+    <div class="row">
+        <p></p>
+    </div>
+    <div class="row">
+        <div class="large-4 large-offset-8 columns">
+            <button class="button success">Submit</button>
+            <button class="button secodary" ng-click="vm.returnToList()">Return to List</button>
+        </div>
+    </div>
+</form>

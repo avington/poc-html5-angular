@@ -1,0 +1,57 @@
+<!DOCTYPE html >
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular POC</title>
+    <link rel="stylesheet" href="src/css/foundation.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="lib/angular-motion/dist/angular-motion.css" />
+    <!-- endbower -->
+</head>
+<body>
+
+<ui-view></ui-view>
+
+
+<!-- bower:js -->
+<script src="lib/jquery/dist/jquery.js"></script>
+<script src="lib/modernizr/modernizr.js"></script>
+<script src="lib/fastclick/lib/fastclick.js"></script>
+<script src="lib/jquery.cookie/jquery.cookie.js"></script>
+<script src="lib/jquery-placeholder/jquery.placeholder.js"></script>
+<script src="lib/foundation/js/foundation.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="lib/angular-animate/angular-animate.js"></script>
+<script src="lib/angular-messages/angular-messages.js"></script>
+<script src="lib/lodash/lodash.js"></script>
+<!-- endbower -->
+<script src="lib/angular-foundation/mm-foundation-tpls.js"></script>
+<!-- inject:js -->
+<script src="/src/app/app.module.js"></script>
+<script src="/src/app/common/common.module.js"></script>
+<script src="/src/app/courses/courses.module.js"></script>
+<script src="/src/app/home/home.module.js"></script>
+<script src="/src/app/ui/ui.module.js"></script>
+<script src="/src/app/common/common.routes.js"></script>
+<script src="/src/app/courses/courses.routes.js"></script>
+<script src="/src/app/home/home.routes.js"></script>
+<script src="/src/app/common/interfaces/IState.js"></script>
+<script src="/src/app/common/services/lookups.service.js"></script>
+<script src="/src/app/common/services/user.service.js"></script>
+<script src="/src/app/courses/controllers/course-detail.controller.js"></script>
+<script src="/src/app/courses/controllers/course-list.controller.js"></script>
+<script src="/src/app/courses/services/couses.services.js"></script>
+<script src="/src/app/home/controllers/landing.controller.js"></script>
+<script src="/src/app/ui/directive/loader.directive.js"></script>
+<script src="/src/app/ui/directive/pagination.directive.js"></script>
+<script src="/src/app/ui/directive/controls/course-credits.control.directive.js"></script>
+<script src="/src/app/ui/directive/controls/course-servey.control.directive.js"></script>
+<script src="/src/app/ui/directive/controls/course-type.control.directive.js"></script>
+<script src="/src/app/ui/directive/controls/states.control.directive.js"></script>
+<script src="/src/app/ui/directive/grids/courses-grid.directive.js"></script>
+<!-- endinject -->
+</body>
+</html>

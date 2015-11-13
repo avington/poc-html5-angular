@@ -1,0 +1,28 @@
+{
+  "name": "pocangularhtml5",
+  "description": "Poc Angular",
+  "main": "gulpfile.js",
+  "authors": [
+    "Steven Moseley"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.3",
+    "angular": "angularjs#~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "angular-animate": "~1.4.7",
+    "angular-messages": "~1.4.7",
+    "lodash": "~3.10.1",
+    "angular-motion": "~0.4.3",
+    "font-awesome": "~4.4.0"
+  }
+}
